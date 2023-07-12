@@ -41,13 +41,13 @@ export default function Home({ allPostsData }) {
 						</small>
 					</li>
 
-					<li className={utilStyles.listItem} key={"api-practice"}>
+					{/* <li className={utilStyles.listItem} key={"api-practice"}>
 						<Link href="/api-practice">API Practice</Link>
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-12"} />
 						</small>
-					</li>
+					</li> */}
 					
 					<li className={utilStyles.listItem} key={"404"}>
 						<Link href="/404">404</Link>
