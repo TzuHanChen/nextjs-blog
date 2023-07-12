@@ -30,17 +30,25 @@ export default function Home({ allPostsData }) {
 			</section>
 
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>Blog</h2>
+				<h2 className={utilStyles.headingLg}>Practice</h2>
 				
 				<ul className={utilStyles.list}>
-				<li className={utilStyles.listItem} key={"first-post"}>
-						<Link href="/posts/first-post">Clsx practice</Link>
+					{/* <li className={utilStyles.listItem} key={"500"}>
+						<Link href="/500">500</Link>
 						<br />
 						<small className={utilStyles.lightText}>
-							<Date dateString={"2023-07-11"} />
+							<Date dateString={"2023-07-12"} />
 						</small>
 					</li>
 
+					<li className={utilStyles.listItem} key={"api-practice"}>
+						<Link href="/api-practice">API Practice</Link>
+						<br />
+						<small className={utilStyles.lightText}>
+							<Date dateString={"2023-07-12"} />
+						</small>
+					</li> */}
+					
 					<li className={utilStyles.listItem} key={"404"}>
 						<Link href="/404">404</Link>
 						<br />
@@ -48,8 +56,18 @@ export default function Home({ allPostsData }) {
 							<Date dateString={"2023-07-11"} />
 						</small>
 					</li>
+
+					<li className={utilStyles.listItem} key={"clsx-practice"}>
+						<Link href="/clsx-practice">Clsx Practice</Link>
+						<br />
+						<small className={utilStyles.lightText}>
+							<Date dateString={"2023-07-11"} />
+						</small>
+					</li>
 				</ul>
 				
+				<h2 className={utilStyles.headingLg}>Blog</h2>
+
 				<ul className={utilStyles.list}>
 					{allPostsData.map(({ id, date, title }) => (
 						<li className={utilStyles.listItem} key={id}>

@@ -1,10 +1,10 @@
-import Layout from '../../components/layout';
+import Layout from '../components/layout';
 import Head from 'next/head';
-import Date from '../../components/date';
-import Alert from '../../components/alert';
-import utilStyles from '../../styles/utils.module.css';
+import Date from '../components/date';
+import Alert from '../components/alert';
+import utilStyles from '../styles/utils.module.css';
 
-export default function FirstPost() {
+export default function ClsxPractice() {
 	return (
 		<Layout>
 			<Head>
