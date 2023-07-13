@@ -33,6 +33,14 @@ export default function Home({ allPostsData }) {
 				<h2 className={utilStyles.headingLg}>Practice</h2>
 				
 				<ul className={utilStyles.list}>
+					<li className={utilStyles.listItem} key={"robots"}>
+						<Link href="/robots.txt">robots.txt</Link>
+						<br />
+						<small className={utilStyles.lightText}>
+							<Date dateString={"2023-07-13"} />
+						</small>
+					</li>
+
 					<li className={utilStyles.listItem} key={"500"}>
 						<Link href="/500">500</Link>
 						<br />

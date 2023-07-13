@@ -1,0 +1,7 @@
+# Block all crawlers for /api-practice
+User-agent: *
+Disallow: /api-practice
+
+# Allow all crawlers
+User-agent: *
+Allow: /
