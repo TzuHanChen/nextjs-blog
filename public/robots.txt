@@ -1,6 +1,6 @@
-# Block all crawlers for /api-practice
+# Block all crawlers for /accounts
 User-agent: *
-Disallow: /api-practice
+Disallow: /accounts
 
 # Allow all crawlers
 User-agent: *

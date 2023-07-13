@@ -33,8 +33,16 @@ export default function Home({ allPostsData }) {
 				<h2 className={utilStyles.headingLg}>Practice</h2>
 				
 				<ul className={utilStyles.list}>
+					<li className={utilStyles.listItem} key={"sitemap"}>
+						<Link href="/sitemap.xml" target="_blank">sitemap.xml</Link>
+						<br />
+						<small className={utilStyles.lightText}>
+							<Date dateString={"2023-07-13"} />
+						</small>
+					</li>
+					
 					<li className={utilStyles.listItem} key={"robots"}>
-						<Link href="/robots.txt">robots.txt</Link>
+						<Link href="/robots.txt" target="_blank">robots.txt</Link>
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-13"} />
@@ -49,13 +57,13 @@ export default function Home({ allPostsData }) {
 						</small>
 					</li>
 
-					{/* <li className={utilStyles.listItem} key={"api-practice"}>
+					<li className={utilStyles.listItem} key={"api-practice"}>
 						<Link href="/api-practice">API Practice</Link>
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-12"} />
 						</small>
-					</li> */}
+					</li>
 					
 					<li className={utilStyles.listItem} key={"404"}>
 						<Link href="/404">404</Link>
