@@ -2,16 +2,33 @@ import Layout from '../components/layout';
 import Head from 'next/head';
 import Date from '../components/date';
 import Link from 'next/link';
-// import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import utilStyles from '../styles/utils.module.css';
 
-export default function ApiPractice() {
-	// const [text, setText] = useState();
-	// fetch('/api/hello')
-	// 	.then((res) => res.text())
-	// 	.then((data) => setText(data));
-	// console.log(text);
+function Hello() {
+	const [data, setData] = useState(null);
+	const [isLoading, setLoading] = useState(false);
 
+	useEffect(() => {
+		setLoading(true);
+		fetch('/api/hello')
+			.then((res) => res.text())
+			.then((data) => {
+				setData(data);
+				setLoading(false);
+			});
+	}, []);
+
+	if (isLoading) {
+		return <p>Loading...</p>;
+	}
+	if (!data) {
+		return <p>No data</p>;
+	}
+	return <p>{ data }</p>;
+}
+
+export default function ApiPractice() {
 	return (
 		<Layout>
 			<Head>
@@ -23,10 +40,11 @@ export default function ApiPractice() {
 				<Date dateString={"2023-07-12"} />
 				{'　'}<span>CSF</span>
 			</div>
-			{/* <p>{ text }</p> */}
-			<p>在本地使用 fetch 可取得{' '}
+			<p>資料來源：
 				<Link href="/api/hello" target="_blank">/api/hello</Link>
-			{' '}的資料，可是部署到 Vercel 之後出現 Invalid path 錯誤</p>
+			</p>
+			<p>使用 useEffect 取得資料：</p>
+			<Hello />
 		</Layout>
 	);
 }
