@@ -14,6 +14,7 @@ export default function ClsxPractice() {
 			<h1 className={utilStyles.headingXl}>Clsx practice</h1>
 			<div className={utilStyles.lightText}>
 				<Date dateString={"2023-07-11"} />
+				{'　'}<span>SSG</span>
 			</div>
 			<Alert type="success">success</Alert>
 			<Alert type="error">error</Alert>

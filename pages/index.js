@@ -23,29 +23,38 @@ export default function Home({ allPostsData }) {
 
 			<section className={utilStyles.headingMd}>
 				<p>Hi, I'm TzuHan Chen. A while ago I was a frontend intern, and now my goal is to become a frontend developer.</p>
-				<p>
-					(This is a sample website - I built it with{' '}
-					<a href="https://nextjs.org/learn">Next.js tutorial</a>.)
+				<p>(This is a sample website - I built it with{' '}
+					<a href="https://nextjs.org/learn" target="_blank">
+						Next.js tutorial</a>.)
 				</p>
+				<p>Rendering methods abbreviations :</p>
+				<ul>
+					<li>Static File : SF</li>
+					<li>Static Site Generation : SSG</li>
+					<li>Server-side Rendering : SSR</li>
+					<li>Client-side Fetching : CSF</li>
+				</ul>
 			</section>
 
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<h2 className={utilStyles.headingLg}>Practice</h2>
-				
+
 				<ul className={utilStyles.list}>
 					<li className={utilStyles.listItem} key={"sitemap"}>
 						<Link href="/sitemap.xml" target="_blank">sitemap.xml</Link>
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-13"} />
+							{'　'}<span>SSR</span>
 						</small>
 					</li>
-					
+
 					<li className={utilStyles.listItem} key={"robots"}>
 						<Link href="/robots.txt" target="_blank">robots.txt</Link>
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-13"} />
+							{'　'}<span>SF</span>
 						</small>
 					</li>
 
@@ -54,6 +63,7 @@ export default function Home({ allPostsData }) {
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-12"} />
+							{'　'}<span>SSG</span>
 						</small>
 					</li>
 
@@ -62,14 +72,16 @@ export default function Home({ allPostsData }) {
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-12"} />
+							{'　'}<span>CSF</span>
 						</small>
 					</li>
-					
+
 					<li className={utilStyles.listItem} key={"404"}>
 						<Link href="/404">404</Link>
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-11"} />
+							{'　'}<span>SSG</span>
 						</small>
 					</li>
 
@@ -78,10 +90,13 @@ export default function Home({ allPostsData }) {
 						<br />
 						<small className={utilStyles.lightText}>
 							<Date dateString={"2023-07-11"} />
+							{'　'}<span>SSG</span>
 						</small>
 					</li>
 				</ul>
-				
+			</section>
+
+			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<h2 className={utilStyles.headingLg}>Blog</h2>
 
 				<ul className={utilStyles.list}>
@@ -91,6 +106,7 @@ export default function Home({ allPostsData }) {
 							<br />
 							<small className={utilStyles.lightText}>
 								<Date dateString={date} />
+								{'　'}<span>SSR</span>
 							</small>
 						</li>
 					))}

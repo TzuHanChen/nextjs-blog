@@ -16,11 +16,11 @@ export default function Custom500() {
 			</h1>
 			<div className={utilStyles.lightText}>
 				<Date dateString={"2023-07-12"} />
+				{'　'}<span>SSG</span>
 			</div>
 			<br />
 			<Image
 				src="/images/sample.jpg"
-				className={utilStyles.borderCircle}
 				height={144}
 				width={144}
 				alt="sample"

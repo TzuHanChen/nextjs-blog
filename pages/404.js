@@ -16,6 +16,7 @@ export default function Custom404() {
 			</h1>
 			<div className={utilStyles.lightText}>
 				<Date dateString={"2023-07-11"} />
+				{'　'}<span>SSG</span>
 			</div>
 			<br />
 			<Image

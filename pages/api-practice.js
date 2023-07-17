@@ -21,6 +21,7 @@ export default function ApiPractice() {
 			<h1 className={utilStyles.headingXl}>API practice</h1>
 			<div className={utilStyles.lightText}>
 				<Date dateString={"2023-07-12"} />
+				{'　'}<span>CSF</span>
 			</div>
 			{/* <p>{ text }</p> */}
 			<p>在本地使用 fetch 可取得{' '}

@@ -34,6 +34,7 @@ export default function Post({ postData }) {
 				</h1>
 				<div className={utilStyles.lightText}>
 					<Date dateString={postData.date} />
+					{'　'}<span>SSR</span>
 				</div>
 				<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />		
 			</article>
