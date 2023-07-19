@@ -30,9 +30,8 @@ function Hello() {
 }
 
 function Welcome() {
-	const fetcher = (...args) => 
-		fetch(...args)
-			.then((res) => res.text());
+	const fetcher = (url: string) => 
+		fetch(url).then((res) => res.text());
 	const { data, error, isLoading } = useSWR('/api/welcome', fetcher);
 
 	if (error) {
