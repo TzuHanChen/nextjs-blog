@@ -17,6 +17,9 @@
     "swr": "^2.2.0"
   },
   "devDependencies": {
-    "sass": "^1.63.6"
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "sass": "^1.63.6",
+    "typescript": "5.1.6"
   }
 }
