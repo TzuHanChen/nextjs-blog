@@ -56,13 +56,13 @@ export default function ApiPractice() {
 				<Date dateString={"2023-07-12"} />
 				{'　'}<span>CSF</span>
 			</div>
-			<p>使用 useEffect 取得{' '}
+			<p>With useEffect, get data from{' '}
 				<Link href="/api/hello" target="_blank">/api/hello</Link>
-			{' '}的資料：</p>
+			{' '}:</p>
 			<Hello />
-			<p>使用 SWR 取得{' '}
+			<p>With SWR, get data from{' '}
 				<Link href="/api/welcome" target="_blank">/api/welcome</Link>
-			{' '}的資料：</p>
+			{' '}:</p>
 			<Welcome />
 		</Layout>
 	);
