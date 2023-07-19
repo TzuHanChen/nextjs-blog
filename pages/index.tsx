@@ -109,7 +109,7 @@ export default function Home(
 							<br />
 							<small className={utilStyles.lightText}>
 								<Date dateString={date} />
-								{'　'}<span>SSR</span>
+								{'　'}<span>SSG</span>
 							</small>
 						</li>
 					))}
